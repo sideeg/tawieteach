@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+    <!-- Foodics Combos Action -->
+    <record id="foodics_combos_action" model="ir.actions.act_window">
+        <field name="name">Combos</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">foodics.combos</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- Foodics Combos -->
+   <!--  <menuitem id="foodics_combos_menu" name="Combos" parent="foodics_root_menu" action="foodics_combos_action" sequence="6"/> -->
+    </data>
+</odoo>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Foodics Reasons Action -->
+        <record id="foodics_reasons_action" model="ir.actions.act_window">
+            <field name="name">Reason</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">foodics.reasons</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!-- Foodics Reasons Root Menu -->
+        <!-- <menuitem id="foodics_reasons_root_menu" name="Reasons" sequence="4" parent="foodics_root_menu"/>
+        <menuitem id="foodics_reason_menu" name="Reasons" parent="foodics_reasons_root_menu" action="foodics_reasons_action" sequence="1"/> -->
+
+    </data>
+</odoo>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record model="ir.ui.view" id="qbo_view_company_form">
+		<field name="name">qbo.view.company.form</field>
+		<field name="model">res.company</field>
+		<field name="inherit_id" ref="base.view_company_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//notebook/page[1]" position="after">
+				<page string="Foodics">
+					<separator name="configuration" string="Foodics Configuration"/>
+					<div>
+						<span>
+							<button string='Authenticate' type="object" name="login" class="oe_highlight" icon="fa-plug"/>
+						</span>
+						<span>
+							<!-- <button string='Refresh Token' type="object" name="refresh_token" class="oe_highlight" icon="fa-refresh" style="margin-left: 20px;"/> -->
+						</span>
+					</div>
+					<!-- <notebook> -->
+
+					<!--////////////////////////////  CREDENTIALS PAGE   ////////////////////////////////-->
+						<!-- <page name="credentials" string="Credentials"> -->
+						<separator name="configuration" string="Foodics Credentials Configuration"/>
+							<group string="Credentials">
+								<group name="Credential">
+									<field name="client_id_foodics" />
+									<field name="client_secret_foodics" />
+									<!-- <field name="access_token_foodics"/>
+									<field name="qbo_refresh_token_foodics"/> -->
+									<field name="access_token_expire_in_foodics" readonly="1"/>
+									<field name="refresh_token_expire_in_foodics" readonly="1"/>
+									<field name="minorversion_foodics"/>
+									
+								</group>
+								<group name="Url">
+									<field name="auth_base_url_foodics" />
+									<field name="access_token_url_foodics" />
+									<field name="request_token_url_foodics" />
+									<field name="qbo_domain_foodics"/>
+									<field name="url_foodics"/>
+								</group>
+							</group>
+						<!-- </page> -->
+
+						<separator name="configuration" string="Foodics Account Configuration"/>
+
+                    <!-- <page name="QB Account Settings" string=" QB Account Configuration"> -->
+						<group string="Customer Accounts">
+							<group name="Customer Accounts">
+								<field name="qb_account_recievable_foodics"/>
+								<field name="qb_account_payable_foodics" />
+							</group>
+							<group name="Journal Accounts">
+								<field name="journal_entry_foodics"/>
+								<field name="pos_id_foodics"/>
+								<field name="charges_id_foodics"/>
+							</group>
+							<group string="Product Accounts">
+								<group name="Product Accounts">
+								<field name="qb_income_account_foodics" />
+								<field name="qb_expense_account_foodics" />
+	                            </group>
+							</group>
+						</group>
+					<!-- </page>
+					</noteboo -->k>
+				</page>
+			</xpath>
+		</field>
+	</record>
+</odoo>

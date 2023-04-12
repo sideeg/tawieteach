@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_foodics_get_data_wizard,foodics.get.data.wizard,model_foodics_get_data_wizard,base.group_user,1,1,1,1
+access_foodics_authentication,foodics.authentication,model_foodics_authentication,base.group_user,1,1,1,1
+access_foodics_discounts,foodics.discounts,model_foodics_discounts,base.group_user,1,1,1,1
+access_foodics_delivery_zones,foodics.delivery.zones,model_foodics_delivery_zones,base.group_user,1,1,1,1
+access_foodics_reasons,foodics.reasons,model_foodics_reasons,base.group_user,1,1,1,1
+access_foodics_users,foodics.users,model_foodics_users,base.group_user,1,1,1,1
+access_foodics_house_account,foodics.house.account,model_foodics_house_account,base.group_user,1,1,1,1
+access_foodics_branches,foodics.branches,model_foodics_branches,base.group_user,1,1,1,1
+access_foodics_combos,foodics.combos,model_foodics_combos,base.group_user,1,1,1,1
+access_foodics_charges,foodics.charges,model_foodics_charges,base.group_user,1,1,1,1

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Foodics House Account Action -->
+        <record id="foodics_house_account_action" model="ir.actions.act_window">
+            <field name="name">House Account</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">foodics.house.account</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!-- Foodics House Account Menu -->
+        <!-- <menuitem id="foodics_house_account_menu" name="House Account" parent="foodics_root_menu" action="foodics_house_account_action" sequence -->="2"/>
+    </data>
+</odoo>

@@ -1,0 +1,8 @@
+<odoo>
+  <data>
+<!--   Foodics Root Menu -->
+    <menuitem id="foodics_root_menu" name="Foodics" sequence="1"/>
+<!--   Foodics Configuration   -->
+      <menuitem id="foodics_master_data_menu" name="Master Data" parent="foodics_root_menu" sequence="1"/>
+  </data>
+</odoo>

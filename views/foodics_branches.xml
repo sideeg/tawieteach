@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--    Foodics Branches Action    -->
+        <record id="foodics_branches_action" model="ir.actions.act_window">
+            <field name="name">Branches</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">foodics.branches</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <!-- Foodics Branches Menu -->
+        <!-- <menuitem id="foodics_branches_menu" name="Branches" parent="foodics_root_menu" action="foodics_branches_action" sequence="10" -->/>
+    </data>
+</odoo>

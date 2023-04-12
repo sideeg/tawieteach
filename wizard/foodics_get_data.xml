@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--  Foodics Get Data Wizard Form View  -->
+        <record id="foodics_get_data_wizard_view_form" model="ir.ui.view">
+            <field name="name">foodics.get.data.wizard.form</field>
+            <field name="model">foodics.get.data.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Foodics" create="false" edit="false">
+                    <sheet>
+                    <group>
+                        <group >
+                            <group colspan="4">
+                                    <separator name="Master Data" string="Master Data"/>
+                            </group>
+                            <group colspan="4">
+                                <button name="get_branches_entity" string="1 - Get Branches" type="object" class="oe_highlight" icon="fa-arrow-circle-down"/>
+                            </group>
+                           <group colspan="4">                            
+                                    <button name="get_categories_entity" string="2 - Get Categories" type="object" class="oe_highlight" icon="fa-arrow-circle-down"/>
+                            </group>
+                            <group colspan="4">                            
+                                    <button name="get_products_entity" string="3 - Get Products" class="oe_highlight" type="object" icon="fa-arrow-circle-down"/>
+                            </group>
+                            <group colspan="4">
+                                    <button name="get_taxes_groups_entity" string="4 - Get tax Group" class="oe_highlight" type="object" icon="fa-arrow-circle-down"/>
+                            </group>
+                            <group colspan="4">
+                                    <button name="get_taxes_entity" string="5 - Get taxes" type="object" class="oe_highlight" icon="fa-arrow-circle-down"/>
+                            </group>
+                            <group colspan="4">                            
+                                    <button name="get_customers_entity" string="6 - Get Custmomer" type="object" class="oe_highlight" icon="fa-arrow-circle-down"/>
+                            </group>
+                            <group colspan="4">                            
+                                    <button name="get_payment_method_entity" string="7 - Get Payment Method" type="object" class="oe_highlight" icon="fa-arrow-circle-down"/>
+                            </group>
+                            <group colspan="4">                            
+                                    <button name="get_users_entity" string="8 - Get Users" type="object" class="oe_highlight" icon="fa-arrow-circle-down"/>
+                            </group>
+                        </group>
+                         <group >
+                                <group colspan="4">
+                                    <separator name="Transtction Data" string="Transtction Data"/>
+                                </group>
+                                <group colspan="4">                            
+                                        <button name="get_pos_orders" string="1- POS Orders" type="object" class="oe_highlight" icon="fa-arrow-circle-down"/>
+                                </group>
+                            </group>
+                    </group>
+                    </sheet>
+                    <footer>
+                        <button string="Cancel" class="btn btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <!--  Foodics Get Data Wizard Action View  -->
+        <record id="foodics_get_data_wizard_action" model="ir.actions.act_window">
+            <field name="name">Get Data From Foodics</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">foodics.get.data.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <!-- Foodics Get Data Wizard Menu Action -->
+        <menuitem id="foodics_get_data_wizard_menu" name="Get Data" parent="foodics_root_menu"
+                  action="foodics_get_data_wizard_action" sequence="9"/>
+    </data>
+</odoo>

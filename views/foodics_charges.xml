@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Foodics Charges Action -->
+    <record id="foodics_charges_action" model="ir.actions.act_window">
+        <field name="name">Charges</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">foodics.charges</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+        <!-- Foodics Charges -->
+       <!--  <menuitem id="foodics_charges_menu" name="Charges" parent="foodics_root_menu" action="foodics_charges_action" sequence="8"/> -->
+    </data>
+</odoo>
